@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "a6a1dccf-e13d-4261-a4ec-830d547f13d7",
+		"name": "Hexlet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "41982873-a6a1dccf-e13d-4261-a4ec-830d547f13d7"
+	},
+	"item": [
+		{
+			"name": "Mission 1",
+			"item": [
+				{
+					"name": "Mission 1",
+					"id": "dad8a775-60bf-4361-9b52-057947b515de",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://http.hexlet.app/postman/login",
+							"protocol": "http",
+							"host": [
+								"http",
+								"hexlet",
+								"app"
+							],
+							"path": [
+								"postman",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://http.hexlet.app/postman/login",
+					"id": "801c0829-8e53-4718-a502-f23bb8b5684d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "ghfhfghgfhfghfhghg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "sdfsdfsdfdf\r\nsdfsdf\r\ndsf324234sdf",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://http.hexlet.app/postman/login",
+							"protocol": "http",
+							"host": [
+								"http",
+								"hexlet",
+								"app"
+							],
+							"path": [
+								"postman",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://http.hexlet.app/postman/login",
+					"id": "8e45dc62-dbbc-4c2a-bc38-8448d823911b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "ghfhfghgfhfghfhghg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/users",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "e5925a5e-6f41-461e-9d5b-c528e40f5c22",
+			"auth": {
+				"type": "bearer"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "99b45520-1e72-4075-ba15-48fcfcaf651a",
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "509fee1b-36d5-4540-bab9-d0e99511c05c",
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	]
+}
