@@ -22,7 +22,16 @@
 										"exec": [
 											"pm.test(\"Status code is 200\", function () {\r",
 											"    pm.response.to.have.status(200);\r",
-											"});"
+											"});\r",
+											"// Extract the id from the URL\r",
+											"const id = pm.request.url.path[1];\r",
+											"\r",
+											"// Test the id extraction\r",
+											"pm.test(\"ID is extracted from the URL\", function () {\r",
+											"    pm.expect(id).to.exist;\r",
+											"    pm.expect(id).to.be.a('string');\r",
+											"});\r",
+											""
 										],
 										"type": "text/javascript",
 										"packages": {}
@@ -337,7 +346,9 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									""
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
 								],
 								"type": "text/javascript",
 								"packages": {}
