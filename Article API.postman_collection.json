@@ -117,7 +117,13 @@
 											"\r",
 											"});\r",
 											"\r",
+											"const id = pm.request.url.path[1];\r",
 											"\r",
+											"// Test the id extraction\r",
+											"pm.test(\"ID is extracted from the URL\", function () {\r",
+											"    pm.expect(id).to.exist;\r",
+											"    pm.expect(id).to.be.a('string');\r",
+											"});\r",
 											""
 										],
 										"type": "text/javascript",
@@ -278,7 +284,13 @@
 											"    pm.response.to.have.status(204);\r",
 											"});\r",
 											"\r",
-											""
+											"const id = pm.request.url.path[1];\r",
+											"\r",
+											"// Test the id extraction\r",
+											"pm.test(\"ID is extracted from the URL\", function () {\r",
+											"    pm.expect(id).to.exist;\r",
+											"    pm.expect(id).to.be.a('string');\r",
+											"});"
 										],
 										"type": "text/javascript",
 										"packages": {}
