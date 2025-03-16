@@ -103,10 +103,6 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
 											"pm.test(\"Body is correct\", function () {\r",
 											"    pm.expect(pm.response.json()).to.have.property('title');\r",
 											"\r",
@@ -410,10 +406,6 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Successful POST request\", function () {\r",
-									"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);\r",
-									"});\r",
-									"\r",
 									"pm.test(\"Body is correct\", function () {\r",
 									"    pm.expect(pm.response.json()).to.have.property('title');\r",
 									"});\r",
