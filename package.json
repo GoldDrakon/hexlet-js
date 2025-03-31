@@ -1,13 +1,13 @@
 {
   "name": "hexlet",
   "version": "1.0.0",
-  "description": "\"Мой первый проект на Хекслете\"",
+  "description": "My first proekt",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
+    "type": "module",
     "url": "git+https://github.com/GoldDrakon/hexlet-js.git"
   },
   "keywords": [
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/GoldDrakon/hexlet-js/issues"
   },
-  "homepage": "https://github.com/GoldDrakon/hexlet-js#readme"
+  "homepage": "https://github.com/GoldDrakon/hexlet-js#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
